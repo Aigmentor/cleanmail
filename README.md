@@ -1,4 +1,4 @@
-# cleanmail
+# grant_search
 
 ## To Run locally:
 ### Setup environment
@@ -18,7 +18,7 @@ POSTGRES_URL=[Postgres URL from neon]
 1. start Heroku:
 `heroku local -f Procfile.local`
 2. start local next.js:
-`cd cleanmail-frontend && npm run dev`
+`cd grant_search-frontend && npm run dev`
 
 
 ## Updating dependencies
@@ -31,7 +31,7 @@ Note that on Heroky none of the "development" dependencies are installed, so if 
 
 ### Database upgrades
 TO reset the DB:
-`python -m cleanmail.db.reset`
+`python -m grant_search.db.reset`
 
 To create an upgrade script:
 `alembic revision --autogenerate -m "UPGRADE DESCRIPTION"`
